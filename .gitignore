@@ -1,0 +1,17 @@
+# python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# conda / virtual environments
+env/
+venv/
+fastapi_auth/
+
+# IDE
+.vscode/
+.idea/
+
+# Database files
+*.db
