@@ -16,6 +16,8 @@ ACCESS_TOKEN_EXPIRE_MINUTES = 60
 
 # hash plain passowrd before storing in DB
 def hash_password(password: str):
+    # truncate to 72 characters
+    password = password[:72]
     return pwd_context.hash(password)
 
 # verify plain password against hash password
