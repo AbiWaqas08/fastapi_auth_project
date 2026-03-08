@@ -24,7 +24,7 @@ def get_db():
 @router.post("/signup")
 def signup(user: UserSignup, db: session = Depends(get_db)):
     # check if user already exists
-    existing_user = db.query(User).filer(User.email == user.email).first()
+    existing_user = db.query(User).filter(User.email == user.email).first()
     if existing_user:
         raise HTTPException(status_code=400, detail="Email Already registered.")
     
