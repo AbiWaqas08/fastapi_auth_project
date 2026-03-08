@@ -1,6 +1,6 @@
 # app/servises/auth_service.py
 
-from sqlalchemy import Session
+from sqlalchemy.orm import Session
 from app.models.user import User
 from app.core.security import hash_password
 

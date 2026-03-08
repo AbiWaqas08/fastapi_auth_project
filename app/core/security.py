@@ -7,7 +7,7 @@ from jose import jwt
 from datetime import datetime, timedelta
 
 # password hashing configration
-pwd_context = CryptContext(schemes=['bcrypt'], deprecated="auto")
+pwd_context = CryptContext(schemes=['argon2'], deprecated="auto")
 
 # jwt configration
 SECRET_KEY = "mysecretkey"
@@ -22,7 +22,7 @@ def hash_password(password: str):
 
 # verify plain password against hash password
 def varify_password(plain_password: str, hashed_password: str):
-    return pwd_context.varify(plain_password, hashed_password)
+    return pwd_context.verify(plain_password, hashed_password)
 
 # create JWT access token
 def create_access_token(data: dict):
