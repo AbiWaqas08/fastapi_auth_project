@@ -45,7 +45,6 @@ fastapi_auth_project/
 │   ├── index.html
 │   ├── package.json
 │   ├── vite.config.js
-│   ├── tailwind.config.js
 │   ├── src/
 │   │   ├── App.jsx
 │   │   ├── main.jsx
@@ -140,5 +139,8 @@ The frontend will run on `http://localhost:5173`.
 **Abi Waqas** – Full-stack Developer
 This project is made for learning and demonstrating **FastAPI authentication with a React frontend**.
 
+<<<<<<< HEAD
 ---
+=======
+>>>>>>> 361a51cd9b606447ed4b396188614b161c17927a
 
